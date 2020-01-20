@@ -2,7 +2,7 @@
 Created on 20 January
 
 ### Project Title
-udacity-git-project
+BIKESHARE PROJECT
 
 ### Description
 Analyses bikeshare data for chicago, new york and washington cities.
