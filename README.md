@@ -1,15 +1,19 @@
 ### Date created
-Include the date you created this project and README file.
+Created on 20 January
 
 ### Project Title
-Replace the Project Title
+udacity-git-project
 
 ### Description
-Describe what your project is about and what it does
+Analyses bikeshare data for chicago, new york and washington cities.
 
 ### Files used
-Include the files used
+Files used:
+(a) bikeshare.py
+(b) chicago.csv
+(c) new_york_city.csv
+(d) washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Credit: https://github.com/udacity/pdsnd_github
 
