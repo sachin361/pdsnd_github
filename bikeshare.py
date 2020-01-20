@@ -188,6 +188,8 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+    
+
 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
@@ -205,8 +207,9 @@ def user_stats(df):
     
     if 'Gender' in df.columns:
     
-        gender_count=df.groupby(['Gender']).size().sort_values(ascending=False)
-        print(gender_count)
+        print("Counts of gender:\n")
+
+        gender_counts = df['Gender'].value_counts()
    
     else :
         print('"Gender data not available for this particular city"')
@@ -241,7 +244,7 @@ def user_stats(df):
     
 def display_data(df):
 
-    """Displays raw bikeshare data."""
+    """If the user wants to examine raw data , it displays first five rows of raw bikeshare data to the users ."""
 
     row_length = df.shape[0]
 
