@@ -272,6 +272,20 @@ def display_data(df):
 
             print(json_row)
 
+def table_stats(df, city):
+
+    """Displays statistics on bikeshare users."""
+
+    print('\nCalculating Dataset Stats...\n')
+
+    
+
+    # counts the number of missing values in the entire dataset
+
+    number_of_missing_values = np.count_nonzero(df.isnull())
+
+    print("The number of missing values in the {} dataset : {}".format(city, number_of_missing_values))
+
 
 
 def main():
@@ -284,6 +298,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         display_data(df)
+        table_stats(df,city)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
