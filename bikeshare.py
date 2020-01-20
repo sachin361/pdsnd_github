@@ -207,8 +207,9 @@ def user_stats(df):
     
     if 'Gender' in df.columns:
     
-        gender_count=df.groupby(['Gender']).size().sort_values(ascending=False)
-        print(gender_count)
+        print("Counts of gender:\n")
+
+        gender_counts = df['Gender'].value_counts()
    
     else :
         print('"Gender data not available for this particular city"')
