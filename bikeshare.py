@@ -202,6 +202,13 @@ def user_stats(df):
     user_count=df.groupby(['User Type']).size().sort_values(ascending=False)
     print("The user count is {}".format(user_count))
 
+    # iteratively print out the total numbers of user types 
+
+    for index, user_count in enumerate(user_counts):
+
+        print("  {}: {}".format(user_counts.index[index], user_count))
+
+
 
     # TO DO: Display counts of gender
     
