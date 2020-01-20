@@ -188,6 +188,8 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+    
+
 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
@@ -241,7 +243,7 @@ def user_stats(df):
     
 def display_data(df):
 
-    """Displays raw bikeshare data."""
+    """If the user wants to examine raw data , it displays first five rows of raw bikeshare data to the users ."""
 
     row_length = df.shape[0]
 
